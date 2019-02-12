@@ -3,6 +3,10 @@
  */
 import java.util.HashMap;
 
+/**
+ *
+ * @author 21203630
+ */
 public class Portefeuille {
 	private String libelleP ;
 	private HashMap<Action, Quantite> table;
@@ -16,7 +20,11 @@ public class Portefeuille {
 		this.libelleP = l ;
 	}
 	
-	public String getLibelleP() {
+    /**
+     *
+     * @return
+     */
+    public String getLibelleP() {
 		return libelleP;
 	}
 	
@@ -39,6 +47,7 @@ public class Portefeuille {
 	 * Methode qui permet d'acheter une quantite d'une action
 	 * @param q : quantite e acheter
 	 * @param a : action e acheter
+     * @throws PortefeuilleException
 	 */
 	public void acheterAction(int q, Action a)throws PortefeuilleException {		
 		
@@ -61,6 +70,7 @@ public class Portefeuille {
 	 * Methode qui permet de vendre une quantite d'une action
 	 * @param a : action e vendre
 	 * @param nbA : Nombre d'action e vendre
+     * @throws PortefeuilleException
 	 */
 	public void vendreAction(Action a, int nbA) throws PortefeuilleException {
 		int nbATotal = table.get(a).getNbAction() ;

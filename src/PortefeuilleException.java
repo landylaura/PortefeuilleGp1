@@ -1,9 +1,16 @@
 
+
+/**
+ *
+ * @author 21203630
+ */
 public class PortefeuilleException extends Exception{
 
-
-	
-	public PortefeuilleException (int codeErr) {
+    /**
+     *
+     * @param codeErr
+     */
+    public PortefeuilleException (int codeErr) {
 		
 		switch(codeErr){
 		case 1 :

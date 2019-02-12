@@ -6,11 +6,19 @@
 public class Part {
 	private float pourcentage ;
 	
-	public Part(float p){
+    /**
+     *
+     * @param p
+     */
+    public Part(float p){
 		this.pourcentage = p;
 	}
 	
-	public float getPourcentage() {
+    /**
+     *
+     * @return
+     */
+    public float getPourcentage() {
 		return pourcentage;
 	}
 	
