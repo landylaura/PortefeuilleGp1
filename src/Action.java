@@ -7,16 +7,23 @@
  */
 public abstract class Action {
 
-    protected String libelle;
+    /**
+     *
+     */
+    private final String libelle;
 
-    public Action(String l) {
+    /**
+     *
+     * @param l
+     */
+    public Action(final String l) {
         this.libelle = l;
     }
 
     /**
      * @return le libelle.
      */
-    public String getLibelle() {
+    public final String getLibelle() {
         return libelle;
     }
 
