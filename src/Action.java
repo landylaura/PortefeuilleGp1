@@ -1,5 +1,5 @@
 /**
- * Classe abstraite qui contient la structure générique d'une action
+ * Classe abstraite qui contient la structure gï¿½nï¿½rique d'une action
  * @author 21400895
  *
  */
@@ -7,22 +7,20 @@ public abstract class Action {
 	protected String libelle ;
 	
 	public Action(String l) {
-		this.libelle = l ;
+		this.libelle = l;
 	}
 
+        /**
+         * @return  le libellÃ©.
+         */
 	public String getLibelle() {
 		return libelle;
 	}
-	
-	/**
-	 * Méthode abstraite héritée par les actions
-	 * @param date : date donnée
-	 * @return valeur d'une action à une date donnée
+
+	/** .
+	 * Mï¿½thode abstraite hï¿½ritï¿½e par les actions
+	 * @param date : date donnï¿½e
+	 * @return valeur d'une action ï¿½ une date donnï¿½e
 	 */
-	public abstract float getValeur(String date) ;
-
-	
-	
-	
-
+	public abstract float getValeur(String date);
 }

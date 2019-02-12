@@ -7,7 +7,7 @@ public class Part {
 	private float pourcentage ;
 	
     /**
-     *
+     *Constructeur d'une part
      * @param p
      */
     public Part(float p){

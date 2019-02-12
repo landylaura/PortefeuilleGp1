@@ -21,7 +21,7 @@ public class Portefeuille {
 	}
 	
     /**
-     *
+     *Methode pour avoir le libelle
      * @return
      */
     public String getLibelleP() {
