@@ -1,14 +1,15 @@
 /**
- * Classe héritée de la classe Action
+ * Classe heritee de la classe Action
  */
 
 import java.util.HashMap;
+
 
 public class ActionSimple extends Action {
 	private HashMap<String, Cours> tableCours;
 	
 	/**
-	 * Constructeur d'une action simple qui initie la structure qui contiendra pour une date donnée (clé) son cours (valeur)
+	 * Constructeur d'une action simple qui initie la structure qui contiendra pour une date donnee (cle) son cours (valeur)
 	 * @param l : nom de l'action simple
 	 */
 	public ActionSimple(String l) {
@@ -17,7 +18,7 @@ public class ActionSimple extends Action {
 	}
 	
 	/**
-	 * Méthode qui permet d'affecter un cours à une date donnée
+	 * Methode qui permet d'affecter un cours a une date donnee
 	 * @param c : cours de l'action
 	 */
 	public void affecterCours(Cours c) {
@@ -30,7 +31,7 @@ public class ActionSimple extends Action {
 	
 	@Override
 	/**
-	 * Méthode qui permet de récupérer la valeur d'une action simple à une date donnée 
+	 * Methode qui permet de recuperer la valeur d'une action simple a une date donnee 
 	 */
 	public float getValeur(String date) {
 		float coursNul = 0;

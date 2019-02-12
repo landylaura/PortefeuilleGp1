@@ -1,5 +1,5 @@
 /**
- * Classe qui permet de gérer les cours d'une action
+ * Classe qui permet de gerer les cours d'une action
  * @author 21400895
  *
  */
