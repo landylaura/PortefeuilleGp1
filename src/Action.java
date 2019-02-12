@@ -1,26 +1,39 @@
-/**
- * Classe abstraite qui contient la structure g�n�rique d'une action
+
+/** .
+ * Classe abstraite qui contient la structure generique d'une action
+ *
  * @author 21400895
  *
  */
 public abstract class Action {
-	protected String libelle ;
-	
-	public Action(String l) {
-		this.libelle = l;
-	}
+    
+    /**
+     *
+     * @param libelle
+     */
+    private final String libelle;
 
-        /**
-         * @return  le libellé.
-         */
-	public String getLibelle() {
-		return libelle;
-	}
+    /**
+     *
+     * @param l
+     */
+    public Action(String l) {
+        this.libelle = l;
+    }
 
-	/** .
-	 * M�thode abstraite h�rit�e par les actions
-	 * @param date : date donn�e
-	 * @return valeur d'une action � une date donn�e
-	 */
-	public abstract float getValeur(String date);
+    /**
+     * @return le libelle.
+     */
+    public final String getLibelle() {
+        return libelle;
+    }
+
+    /**
+     * .
+     * Methode abstraite heritee par les actions
+     *
+     * @param date : date donnee
+     * @return valeur d'une action a une date donnee
+     */
+    public abstract float getValeur(String date);
 }

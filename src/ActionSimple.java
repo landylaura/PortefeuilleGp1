@@ -1,48 +1,57 @@
-/**
- * Classe héritée de la classe Action
- */
 
+/**
+ * Classe heritee de la classe Action
+ */
 import java.util.HashMap;
 
+/**
+ *
+ * @author Toky
+ */
 public class ActionSimple extends Action {
-	private HashMap<String, Cours> tableCours;
-	
-	/**
-	 * Constructeur d'une action simple qui initie la structure qui contiendra pour une date donnée (clé) son cours (valeur)
-	 * @param l : nom de l'action simple
-	 */
-	public ActionSimple(String l) {
-		super(l);
-		this.tableCours = new HashMap <String, Cours>();
-	}
-	
-	/**
-	 * Méthode qui permet d'affecter un cours à une date donnée
-	 * @param c : cours de l'action
-	 */
-	public void affecterCours(Cours c) {
-		String clef;
-		clef = c.getNumJ()+"/"+c.getAnnee();
-		
-		this.tableCours.put(clef, c); 
-	}
 
-	
-	@Override
-	/**
-	 * Méthode qui permet de récupérer la valeur d'une action simple à une date donnée 
-	 */
-	public float getValeur(String date) {
-		float coursNul = 0;
-		
-		if (tableCours.containsKey(date)){
-			return this.tableCours.get(date).getValeurC();
-		}else{
-			return coursNul;
-		}
-		
-	}
+    /**
+     */
+    private final HashMap<String, Cours> tableCours;
 
-	
+    /**
+     * .
+     * Constructeur d'une action simple qui initie la structure qui contiendra
+     * pour une date donnee (cle) son cours (valeur).
+     *
+     * @param l : nom de l'action simple
+     */
+    public ActionSimple(final String l) {
+        super(l);
+        this.tableCours = new HashMap<String, Cours>();
+    }
+
+    /**
+     * .
+     * Methode qui permet d'affecter un cours a une date donnee
+     *
+     * @param c : cours de l'action
+     */
+    public final void affecterCours(final Cours c) {
+        String clef;
+        clef = c.getNumJ() + "/" + c.getAnnee();
+        this.tableCours.put(clef, c);
+    }
+
+    @Override
+    /**
+     * Methode qui permet de recuperer la valeur d'une action simple a une date
+     * donnee
+     */
+    public final float getValeur(final String date) {
+        float coursNul = 0;
+
+        if (tableCours.containsKey(date)) {
+            return this.tableCours.get(date).getValeurC();
+        } else {
+            return coursNul;
+        }
+
+    }
+
 }
-
