@@ -7,13 +7,13 @@ public class PortefeuilleException extends Exception{
 		
 		switch(codeErr){
 		case 1 :
-			System.err.println("Vous n'avez pas assez d'actions à vendre !! "); 
+			System.err.println("Vous n'avez pas assez d'actions ï¿½ vendre !! "); 
 			break;
 		case 2 : 
-			System.err.println("Le nombre d'action à vendre doit être positif!!");
+			System.err.println("Le nombre d'action ï¿½ vendre doit ï¿½tre positif!!");
 			break; 
 		case 3 : 
-			System.err.println("Le nombre d'action à acheter doit être positif!!");
+			System.err.println("Le nombre d'action ï¿½ acheter doit ï¿½tre positif!!");
 			break; 
 		}
 		

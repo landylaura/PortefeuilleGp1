@@ -1,5 +1,5 @@
 /**
- * Classe qui permet de créer un portfeuille d'action
+ * Classe qui permet de creer un portfeuille d'action
  */
 import java.util.HashMap;
 
@@ -8,7 +8,7 @@ public class Portefeuille {
 	private HashMap<Action, Quantite> table;
 	
 	/**
-	 * Constructeur d'un portefeuille qui initie la structure qui contiendra pour une action (clé) sa quantité (valeur)
+	 * Constructeur d'un portefeuille qui initie la structure qui contiendra pour une action (cle) sa quantite (valeur)
 	 * @param l : nom du portefeuille
 	 */
 	public Portefeuille(String l) {
@@ -21,8 +21,8 @@ public class Portefeuille {
 	}
 	
 	/**
-	 * Méthode qui permet de calculer la valeur d'un portefeuille à une date donnée
-	 * @param date : date donnée
+	 * Methode qui permet de calculer la valeur d'un portefeuille e une date donnee
+	 * @param date : date donnee
 	 * @return valeur du portefeuille
 	 */
 	public float getValeur(String date) {
@@ -36,9 +36,9 @@ public class Portefeuille {
 	}
 	
 	/**
-	 * Méthode qui permet d'acheter une quantité d'une action
-	 * @param q : quantité à acheter
-	 * @param a : action à acheter
+	 * Methode qui permet d'acheter une quantite d'une action
+	 * @param q : quantite e acheter
+	 * @param a : action e acheter
 	 */
 	public void acheterAction(int q, Action a)throws PortefeuilleException {		
 		
@@ -58,9 +58,9 @@ public class Portefeuille {
 	}
 	
 	/**
-	 * Méthode qui permet de vendre une quantité d'une action
-	 * @param a : action à vendre
-	 * @param nbA : Nombre d'action à vendre
+	 * Methode qui permet de vendre une quantite d'une action
+	 * @param a : action e vendre
+	 * @param nbA : Nombre d'action e vendre
 	 */
 	public void vendreAction(Action a, int nbA) throws PortefeuilleException {
 		int nbATotal = table.get(a).getNbAction() ;
@@ -90,7 +90,7 @@ public class Portefeuille {
 	
 	
 	/**
-	 * Méthode qui permet de récupérer la quantité d'une action dans un portefeuille 
+	 * Methode qui permet de recuperer la quantite d'une action dans un portefeuille 
 	 * @param a : action
 	 * @return le nombre d'action
 	 */
