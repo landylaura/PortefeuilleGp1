@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class ActionCompose extends Action {
 
         /**
-         * @param table : table des actions
+         * @param table : table des action
          */
         private final HashMap<ActionSimple, Part> table;
 	/**.
