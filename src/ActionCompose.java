@@ -1,5 +1,5 @@
 /**
- * Classe h�rit�e de la classe Action
+ * Classe heritee de la classe Action
  */
 import java.util.HashMap;
 //Ok guyys, this is my first comment 
@@ -8,8 +8,8 @@ public class ActionCompose extends Action{
 	private HashMap<ActionSimple, Part> table;
 
 	/**
-	 * Constructeur d'une action compos�e qui initie la structure qui contiendra pour une action simple donn�e (cl�) son pourcentage de d�tention (valeur)
-	 * @param l : nom de l'action compos�e
+	 * Constructeur d'une action composee qui initie la structure qui contiendra pour une action simple donnee (cle) son pourcentage de detention (valeur)
+	 * @param l : nom de l'action composee
 	 */
 	public ActionCompose(String l) {
 		super(l);
@@ -17,9 +17,9 @@ public class ActionCompose extends Action{
 	}
 	
 	/**
-	 * M�thode qui permet d'ajouter une action simple � une action compos�e
+	 * Methode qui permet d'ajouter une action simple a une action composee
 	 * @param as : action simple
-	 * @param p : pourcentage de d�tention de l'action simple
+	 * @param p : pourcentage de detention de l'action simple
 	 */
 	public void ajouterActionSimple(ActionSimple as, float p) {			
 		this.table.put(as, new Part(p)); 
@@ -27,7 +27,7 @@ public class ActionCompose extends Action{
 	
 	@Override
 	/**
-	 * M�thode qui permet de r�cup�rer la valeur d'une action compos�e
+	 * Methode qui permet de recuperer la valeur d'une action composee
 	 */
 	public float getValeur(String date) {
 		float somme = 0 ;
